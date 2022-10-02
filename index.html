@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,41 +8,65 @@
     <title>Sign-up Form</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <div class="wrapper">
-        <div class="bg-image">
+        <!-- <div class="left-wrapper">
             <div class="odin-logo">ODIN</div>
-        </div>
-        
-        <div class="form-wrapper">
+        </div> -->
+
+        <div class="right-wrapper">
             <header class="form-header">
-                <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started.<br>You <em>know</em> you want to.</p>
+                <p>This is not a real online service! You know you need something like this in your life to help you
+                    realize your deepest dreams. Sign up <em>now</em> to get started.</p>
+                <p><br>You <em>know</em> you want to.</p>
             </header>
 
             <form action="#" method="get">
-                <div class="form-row">
-                    <label for="first-name">First Name</label>
-                    <input type="text" id="first-name" name="first-name">
+                <div class="form-inputs">
 
-                    <label for="last-name">Last Name</label>
-                    <input type="text" id="last-name" name="last-name">
+                    <div class="form-input">
+                        <label for="first-name">First Name</label>
+                        <input type="text" id="first-name" name="first-name">
+                    </div>
+
+                    <div class="form-input">
+                        <label for="last-name">Last Name</label>
+                        <input type="text" id="last-name" name="last-name">
+                    </div>
+
+
+                    <div class="form-input">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email">
+                    </div>
+
+                    <div class="form-input">
+                        <label for="tel-number">Phone number</label>
+                        <input type="tel" id="tel-number" name="tel-number">
+                    </div>
+
+                    <div class="form-input">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password">
+                    </div>
+
+                    <div class="form-input">
+                        <label for="password">Confirm password</label>
+                        <input type="password" id="password" name="password">
+                    </div>
+
                 </div>
-                <div class="form-row">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email">
-
-                    <label for="tel-number">Phone number</label>
-                    <input type="tel" id="tel-number" name="tel-number">
+                <div class="form-btn">
+                    <button>Create Account</button>
                 </div>
-                <div class="form-row">
-                    <label for="password">Password</label>
-                    <input type="password" id="password" name="password">
-
-                    <label for="password">Confirm password</label>
-                    <input type="password" id="password" name="password">
+                <div class="login">
+                    <p>Already have an account?</p>
+                    <a href="">Log in</a>
                 </div>
             </form>
         </div>
     </div>
 </body>
+
 </html>
