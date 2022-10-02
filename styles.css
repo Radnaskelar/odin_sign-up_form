@@ -154,3 +154,11 @@ input:invalid {
 a:link {
     color:#EAEDF0;
 }
+
+/* Mobile view to be completed! */
+
+@media only screen and (max-width: 850px) {
+    .wrapper {
+        flex-flow: column;
+    }
+}
