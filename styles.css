@@ -2,12 +2,37 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    border: 2px solid magenta;
 }
+
+@font-face {
+    font-family: norse-bold;
+    src: url("Norse-Bold.otf");
+}
+
 .wrapper {
     display: flex;
+    height: 100vh;
 }
 
 .wrapper > .bg-image {
     border: 2px solid green;
     background-image: url("halie-west-unsplash.jpg");
+    flex-grow: .33;
+}
+
+.odin-logo {
+    background-color: #596d48;
+    opacity: 50%;
+    font-family: norse-bold, sans-serif;
+}
+
+
+
+.form-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin: 0 50px;
 }
