@@ -11,9 +11,9 @@
 
 <body>
     <div class="wrapper">
-        <!-- <div class="left-wrapper">
+        <div class="left-wrapper">
             <div class="odin-logo">ODIN</div>
-        </div> -->
+        </div>
 
         <div class="right-wrapper">
             <header class="form-header">
@@ -30,12 +30,12 @@
 
                     <div class="form-input">
                         <label for="first-name">First Name</label>
-                        <input type="text" id="first-name" name="first-name" required minlength="3" maxlength="10">
+                        <input type="text" id="first-name" name="first-name" required>
                     </div>
 
                     <div class="form-input">
                         <label for="last-name">Last Name</label>
-                        <input type="text" id="last-name" name="last-name">
+                        <input type="text" id="last-name" name="last-name" required>
                     </div>
 
 
@@ -51,13 +51,13 @@
 
                     <div class="form-input">
                         <label for="password">Password</label>
-                        <input type="password" id="password" name="password" class="error" required>
+                        <input type="password" id="password" name="password" class="error" required pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$">
                         <span></span>
                     </div>
 
                     <div class="form-input">
                         <label for="password">Confirm password</label>
-                        <input type="password" id="password" name="password" class="error" required>
+                        <input type="password" id="password" name="password" required pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$">
                         <span></span>
                     </div>
 
