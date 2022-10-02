@@ -22,18 +22,47 @@ body {
 
 .wrapper {
     display: flex;
-    height: 100vh;
+    height: 100%;
+    flex-direction: row;
 }
 
-.bg-image {
+.left-wrapper {
     background-image: url("halie-west-unsplash.jpg");
-    flex-grow: .33;
+    width: 100%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+}
+
+.right-wrapper {
+    flex-grow: 3;
 }
 
 .odin-logo {
+    display: flex;
     background-color: #596d48;
-    opacity: 50%;
+    opacity: 70%;
     font-family: norse-bold, sans-serif;
+    justify-content: center;
+    background-image: url("odin-lined.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    font-size: 3em;
+    color: #EAEDF0;
+    position: relative;
+    top: 200px;
+    padding: 10px;
+}
+
+.credit {
+    display: flex;
+    color: #EAEDF0;
+    font-size: 1rem;
+    font-weight: lighter;
+    justify-content: center;
+    position: relative;
+    top: 85%;
 }
 
 .form-header {
@@ -63,7 +92,6 @@ body {
 .form-input input {
     display: block;
     height: 25px;
-    width: 250px;
 }
 
 .form-input label {
@@ -100,7 +128,8 @@ input:focus {
     display: flex;
     margin: 0px 50px 50px 50px;
     padding-bottom: 50px;
-    gap: 1ch;
+    gap: .5ch;
+    font-size: 1rem;
 }
 
 .login>a {
@@ -119,6 +148,7 @@ input.error:invalid+span::after {
     padding: 2px;
     margin-top: 2px;
     border-radius: 3px;
+    font-weight: lighter;
 }
 
 input:invalid {
